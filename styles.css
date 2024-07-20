@@ -51,7 +51,6 @@ body {
     top: 20px;
     right: 20px;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
 }
 
@@ -69,25 +68,12 @@ body {
     background-image: url('images/1.jpg');
 }
 
-.navbar-nav .nav-link {
-    font-size: 1.1rem;
-    color: var(--text-color);
-    padding: 10px;
-    transition: color 0.3s;
-}
-
-.navbar-nav .nav-link:hover {
-    color: var(--primary-color);
-}
-
-.navbar-nav .nav-link.active {
-    color: #ffffff;
-    background-color: var(--primary-color);
-    border-radius: 5px;
+.navbar .nav-link {
+    color: white !important;
 }
 
 #dark-mode-toggle {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     font-size: 1rem;
@@ -201,7 +187,7 @@ body.dark-mode {
 }
 
 .dark-mode .sidebar .card {
-    background-color: var (--dark-card-background);
+    background-color: var(--dark-card-background);
     color: var(--dark-card-text);
     border: 1px solid #444;
 }
@@ -246,7 +232,7 @@ body.dark-mode {
 }
 
 .review-author {
-    font-style: italic;
+    font-style: italic
 }
 
 .features {
