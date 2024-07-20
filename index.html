@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" data-aos="fade-in" role="banner">
+        <div class="container text-center text-white">
+            <h1 data-aos="slide-left">Welcome to My Blog</h1>
+            <p data-aos="slide-right">Sharing insights and stories</p>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" role="navigation">
+        <div class="container-fluid">
+            <button class="btn btn-secondary me-3" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="bi bi-moon"></i>
+            </button>
+            <a class="navbar-brand" href="#">My Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plans">Plans</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5" role="main" id="blog">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-posts-container">
+                    <!-- Blog Posts -->
+                    <article class="blog-post" data-aos="fade-up">
+                        <div class="card mb-4">
+                            <img src="images/10.jpg" class="card-img-top" alt="Description of Post Image 1" width="300vw">
+                            <div class="card-body">
+                                <h5 class="card-title">Blog Post Title 1</h5>
+                                <p class="card-text">This is a short excerpt of the first blog post.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="blog-post" data-aos="fade-up">
+                        <div class="card mb-4">
+                            <img src="images/7.jpg" class="card-img-top" alt="Description of Post Image 2" width="300vw">
+                            <div class="card-body">
+                                <h5 class="card-title">Blog Post Title 2</h5>
+                                <p class="card-text">This is a short excerpt of the second blog post.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="blog-post" data-aos="fade-up">
+                        <div class="card mb-4">
+                            <img src="images/6.jpg" class="card-img-top" alt="Description of Post Image 3" width="300vw">
+                            <div class="card-body">
+                                <h5 class="card-title">Blog Post Title 3</h5>
+                                <p class="card-text">This is a short excerpt of the third blog post.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+                 
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="profile-box" data-aos="fade-up">
+                        <img src="images/11.jpg" alt="Profile Image" class="profile-img">
+                        <div class="profile-content">
+                            <h3>About Me</h3>
+                            <p>Hi, I'm Daniel, a passionate blogger with a knack for [your main blogging topic, e.g., technology, travel, lifestyle]. With a background in [briefly mention your relevant experience or education], I dive deep into [your area of interest or expertise] to bring you fresh perspectives and valuable insights.</p>
+                            <p>I started this blog to [your motivation or reason for starting the blog, e.g., share my journey, explore new ideas, connect with like-minded people]. Whether you're here to [what readers can expect, e.g., learn more about the latest tech trends, find travel tips, or get inspired for your next adventure], I hope you find something that resonates with you.</p>
+                            <p>When I'm not blogging, you can find me [mention any hobbies or interests, e.g., hiking, experimenting with new recipes, or delving into a good book]. I'm always open to [call-to-action, e.g., feedback, collaborations, or simply connecting], so feel free to reach out!</p>
+                            <p>Thanks for visiting, and happy reading!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-box" data-aos="fade-up">
+                <div class="contact-content">
+                    <p>If you have any questions, feedback, or just want to say hello, feel free to reach out to me. I'm always open to connecting with my readers and fellow bloggers.</p>
+                    <p>Email: daniel@example.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Follow me on social media:</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Reviews Section -->
+    <section class="client-reviews" id="reviews">
+        <div class="container">
+            <h2>Client Reviews</h2>
+            <div class="review-boxes">
+                <div class="review-box" data-aos="fade-up">
+                    <div class="review-content">
+                        <p>"This blog has been a game-changer for me. The insights and tips are incredibly valuable. I look forward to every new post!"</p>
+                        <p class="review-author">- Emily R.</p>
+                    </div>
+                </div>
+                <div class="review-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-content">
+                        <p>"I love the variety of topics covered. From travel to environmental issues, there's always something interesting to read."</p>
+                        <p class="review-author">- Michael T.</p>
+                    </div>
+                </div>
+                <div class="review-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-content">
+                        <p>"The writing style is engaging and the content is well-researched. This blog is a must-read for anyone looking to stay informed."</p>
+                        <p class="review-author">- Sarah L.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card" data-aos="zoom-in">
+                    <img src="images/4.jpg" alt="Feature 1">
+                    <div class="feature-content">
+                        <h3>Eco-Friendly Tips</h3>
+                        <p>Discover practical tips to reduce your carbon footprint and live a more sustainable life.</p>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/3.jpg" alt="Feature 2">
+                    <div class="feature-content">
+                        <h3>Travel Guides</h3>
+                        <p>Explore comprehensive travel guides to some of the most beautiful and unique destinations around the world.</p>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/5.jpg" alt="Feature 3">
+                    <div class="feature-content">
+                        <h3>Healthy Living</h3>
+                        <p>Learn about healthy living practices, including nutrition, exercise, and mental well-being.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans" id="plans">
+        <div class="container">
+            <h2>Our Plans</h2>
+            <div class="plan-cards">
+                <div class="plan-card basic-plan" data-aos="flip-left">
+                    <h3>Basic Plan</h3>
+                    <p>Perfect for individuals who are just starting out and want to explore our content.</p>
+                    <ul>
+                        <li>Access to all blog posts</li>
+                        <li>Monthly newsletter</li>
+                        <li>Basic support</li>
+                    </ul>
+                    <p class="price">3,999 Rs</p>
+                    <a href="#" class="btn btn-primary">Choose Plan</a>
+                </div>
+                <div class="plan-card standard-plan" data-aos="flip-left" data-aos-delay="100">
+                    <h3>Standard Plan</h3>
+                    <p>Ideal for regular readers who want more in-depth content and additional features.</p>
+                    <ul>
+                        <li>Access to all blog posts</li>
+                        <li>Weekly newsletter</li>
+                        <li>Priority support</li>
+                        <li>Exclusive content</li>
+                    </ul>
+                    <p class="price">5,999 Rs</p>
+                    <a href="#" class="btn btn-primary">Choose Plan</a>
+                </div>
+                <div class="plan-card premium-plan" data-aos="flip-left" data-aos-delay="200">
+                    <h3>Premium Plan</h3>
+                    <p>Best for avid readers who want the full experience, including all premium features.</p>
+                    <ul>
+                        <li>Access to all blog posts</li>
+                        <li>Daily newsletter</li>
+                        <li>24/7 support</li>
+                        <li>Exclusive content</li>
+                        <li>Personalized recommendations</li>
+                    </ul>
+                    <p class="price">7,999 Rs</p>
+                    <a href="#" class="btn btn-primary">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4" role="contentinfo">
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Custom JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            // Check the saved theme on initial load
+            if (localStorage.getItem('dark-mode') === 'true') {
+                body.classList.add('dark-mode');
+            }
+
+            toggleButton.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                // Save the user's preference in local storage
+                localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+            });
+        });
+    </script>
+</body>
+</html>
