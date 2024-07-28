@@ -153,45 +153,12 @@ body.dark-mode {
     background-color: var(--dark-background-color);
     color: var(--dark-text-color);
 }
-
-.dark-mode .header {
-    background-image: url('images/1.jpg');
-    color: var(--dark-text-color);
+.dark-mode .plan-card h3,
+.dark-mode .plan-card p,
+.dark-mode .plan-card ul,
+.dark-mode .plan-card .price {
+    color: #000000;
 }
-
-.dark-mode .navbar-light {
-    background-color: #1c1c1c;
-    border-color: #444;
-}
-
-.dark-mode .navbar-light .navbar-brand,
-.dark-mode .navbar-light .nav-link {
-    color: var(--dark-text-color);
-}
-
-.dark-mode .navbar-light .nav-link.active {
-    color: #ffffff;
-    background-color: var(--primary-color);
-    border-radius: 5px;
-}
-
-.dark-mode .blog-post .card {
-    background-color: var(--dark-card-background);
-    color: var(--dark-card-text);
-    border: 1px solid #444;
-}
-
-.dark-mode .blog-post .btn {
-    background-color: var(--primary-color);
-    color: var(--dark-text-color);
-}
-
-.dark-mode .sidebar .card {
-    background-color: var(--dark-card-background);
-    color: var(--dark-card-text);
-    border: 1px solid #444;
-}
-
 .dark-mode .footer {
     background-color: #1c1c1c;
     color: var(--dark-text-color);
@@ -204,7 +171,10 @@ body.dark-mode {
     padding: 50px 0;
     text-align: center;
     color: #fff;
+    margin: 50px 10%;
+    border-radius: 20px ;
     margin-bottom: 50px; /* Increase white space below reviews */
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
 }
 
 .client-reviews h2 {
@@ -216,13 +186,14 @@ body.dark-mode {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 50px 5%;
 }
 
 .review-box {
-    width: 30%;
+    width: 25%;
     background-color: rgba(0, 0, 0, 0.36);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
@@ -236,7 +207,7 @@ body.dark-mode {
 }
 
 .features {
-    padding: 50px 0;
+    padding: 50px 10%; /* Increase padding from 50px to 10% on both sides */
     text-align: center;
 }
 
@@ -258,20 +229,22 @@ body.dark-mode {
 }
 
 .feature-card img {
-    width: 100%;
+    width: 99%;
     border-radius: 10px;
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
 }
 
 .feature-content {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    padding: 10px;
+    width: 94%;
+    padding: 9px;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0);
 }
 
 .feature-content h3 {
@@ -284,7 +257,7 @@ body.dark-mode {
 }
 
 .plans {
-    padding: 50px 0;
+    padding: 50px 10%;
     text-align: center;
 }
 
@@ -297,17 +270,17 @@ body.dark-mode {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0; /* Add negative margin on both sides to create space between plans */
 }
 
 .plan-card {
-    width: 30%;
+    width: 25%;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
     margin-bottom: 30px;
     position: relative;
-    transition: transform 0.3s;
-}
+    transition: transform 0.3s;}
 
 .plan-card:hover {
     transform: translateY(-10px);
@@ -360,7 +333,7 @@ body.dark-mode {
 .footer {
     background-color: var(--background-color);
     color: var(--text-color);
-    padding: 20px 0;
+    padding: 20px 10%;
     text-align: center;
 }
 
@@ -372,16 +345,19 @@ body.dark-mode {
     background-image: url('images/12.jpg');
     background-size: cover;
     background-position: center;
-    padding: 50px 0;
+    padding: 50px 15%;
     color: #fff;
     text-align: center;
     margin-bottom: 50px; /* Increase white space below about */
+    margin: 50px 10%;
+    border-radius: 20px ;
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
 }
 
 .profile-box {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -409,16 +385,19 @@ body.dark-mode {
     background-image: url('images/13.jpg');
     background-size: cover;
     background-position: center;
-    padding: 50px 0;
+    padding: 50px 10%;
     color: #fff;
     text-align: center;
     margin-bottom: 50px; /* Increase white space below contact */
+    margin: 50px 10%;
+    border-radius: 20px ;
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
 }
 
 .contact-box {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
