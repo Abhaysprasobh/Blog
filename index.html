@@ -27,7 +27,7 @@
             <button class="btn btn-secondary me-3" id="dark-mode-toggle" aria-label="Toggle dark mode">
                 <i class="bi bi-moon"></i>
             </button>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="open-navbar-btn" class="navbar-toggler">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -149,7 +149,6 @@
                         <div class="profile-content">
                             <h3>About Me</h3>
                             <p>Hi, I'm Daniel, a passionate blogger with a knack for [your main blogging topic, e.g., technology, travel, lifestyle]. With a background in [briefly mention your relevant experience or education], I dive deep into [your area of interest or expertise] to bring you fresh perspectives and valuable insights.</p>
-                            <p>I started this blog to [your motivation or reason for starting the blog, e.g., share my journey, explore new ideas, connect with like-minded people]. Whether you're here to [what readers can expect, e.g., learn more about the latest tech trends, find travel tips, or get inspired for your next adventure], I hope you find something that resonates with you.</p>
                             <p>Thanks for visiting, and happy reading!</p>
                         </div>
                     </div>
@@ -190,6 +189,9 @@
     </script>
     <!-- Custom JS -->
     <script>
+        document.getElementById('open-navbar-btn').addEventListener('click', function() {
+    document.querySelector('.navbar').classList.toggle('open');
+});
         document.addEventListener('DOMContentLoaded', () => {
             const toggleButton = document.getElementById('dark-mode-toggle');
             const body = document.body;
