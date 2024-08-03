@@ -461,23 +461,6 @@ body.dark-mode {
         border-radius: 20px ;
         box-shadow: 1px 5px 10px rgb(0, 0, 0);
     }
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: -250px; /* Adjust the left position as needed */
-        width: 250px;
-        height: 100vh;
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        transition: left 0.3s;
-        z-index: 999; /* Ensure it stays on top */
-    }
-    
-    .navbar.open {
-        left: 0;
-    }
-    
     .navbar .nav-link {
         display: block;
         margin-bottom: 10px;
