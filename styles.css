@@ -452,7 +452,7 @@ body.dark-mode {
       border-radius: 20px ;
       box-shadow: 1px 5px 10px rgb(0, 0, 0);
   }
-  .navbar{
+  .navbar-brand{
     display: none;
   }
 }
