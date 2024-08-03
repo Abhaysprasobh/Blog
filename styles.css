@@ -22,13 +22,14 @@ body {
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
   background-image: url('images/16.jpg');
+  background-size:cover;
 }
 
 .header {
-  background-image: url('images/18.jpg');
-  background-size:100%;
+  background-image: url('images/1.jpg');
+  background-size:cover;
   background-position: center;
-  padding: 100px ;
+  padding-top: 75vh;
   color: white;
   text-align: center;
   position: relative;
@@ -39,11 +40,13 @@ body {
 .header h1 {
   font-size: 3rem;
   font-weight: bold;
+  translate: 0px -200px;
   animation: slideInFromLeft 1s ease-in-out;
 }
 
 .header p {
   font-size: 1.5rem;
+  translate: 0px -200px;
   animation: slideInFromRight 1s ease-in-out;
 }
 .navbar {
