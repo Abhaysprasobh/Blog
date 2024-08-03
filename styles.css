@@ -82,25 +82,6 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .navbar-brand {
-        margin-bottom: 10px;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-    }
-
-    .navbar-nav .nav-link {
-        margin-left: 0;
-        margin-bottom: 5px;
-    }
-}
-
 #dark-mode-toggle {
     position: fixed;
     top: 20px;
