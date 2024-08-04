@@ -29,7 +29,7 @@ body {
   background-image: url('images/1.jpg');
   background-size:cover;
   background-position: center;
-  padding-top: 75vh;
+  padding-top: 70vh;
   color: white;
   text-align: center;
   position: relative;
@@ -156,6 +156,7 @@ body {
 
 body.dark-mode {
   background-color: var(--dark-background-color);
+  background-image: none; 
   color: var(--dark-text-color);
 }
 .dark-mode .plan-card h3,

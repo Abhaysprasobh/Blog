@@ -198,28 +198,21 @@
     </script>
     <!-- Custom JS -->
     <script>
-        document.getElementById('open-navbar-btn').addEventListener('click', function() {
-    document.querySelector('.navbar').classList.toggle('open');
-});
-        document.addEventListener('DOMContentLoaded', () => {
-            const toggleButton = document.getElementById('dark-mode-toggle');
-            const body = document.body;
-            const icon = toggleButton.querySelector('i');
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+        const icon = darkModeToggle.querySelector('i');
 
-            // Check the saved theme on initial load
-            if (localStorage.getItem('dark-mode') === 'true') {
-                body.classList.add('dark-mode');
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
                 icon.classList.replace('bi-moon', 'bi-sun');
+            } else {
+                icon.classList.replace('bi-sun', 'bi-moon');
             }
-
-            toggleButton.addEventListener('click', () => {
-                body.classList.toggle('dark-mode');
-                const isDarkMode = body.classList.contains('dark-mode');
-                localStorage.setItem('dark-mode', isDarkMode);
-                icon.classList.toggle('bi-moon', !isDarkMode);
-                icon.classList.toggle('bi-sun', isDarkMode);
-            });
         });
+    </script>
+</body>
+</html>
     </script>
 </body>
 </html>
