@@ -13,6 +13,9 @@
   --standard-plan-color: #ffe0b2;
   --premium-plan-color: #ffccbc;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Arial', sans-serif;
@@ -21,20 +24,28 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
-  background-image: url('images/16.jpg');
   background-size:cover;
+
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
 }
 
 .header {
-  background-image: url('images/1.jpg');
+  background-image: url('images/21.jpg');
   background-size:cover;
   background-position: center;
-  padding-top: 70vh;
+  padding-top: 75vh;
   color: white;
   text-align: center;
   position: relative;
   animation: fadeIn 2s ease-in-out;
   margin-bottom: 0; /* Increase white space below header */
+  box-shadow: 8px 8px 16px #b5b5b5, -8px -8px 16px #ffffff;
+
+}
+.feature-card, .plan-card, .review-box {
+  background: #e0e0e0;
+  box-shadow: 8px 8px 16px, -8px -8px 16px;
+  border-radius: 15px;
 }
 
 .header h1 {
@@ -284,10 +295,12 @@ body.dark-mode {
 }
 
 .plan-card {
-  width: 25%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
   padding: 20px;
-  border-radius: 20px;
-  box-shadow: 1px 5px 10px rgb(0, 0, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 25%;
   margin-bottom: 30px;
   position: relative;
   transition: transform 0.3s;}
