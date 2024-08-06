@@ -30,7 +30,7 @@ body {
 }
 
 .header {
-  background-image: url('images/21.jpg');
+  background-image: url('images/21.webp');
   background-size:cover;
   background-position: center;
   padding-top: 75vh;
@@ -73,7 +73,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  background-image: url('images/1.jpg');
+  background-image: url('images/1.webp');
 }
 
 .navbar-brand {
@@ -182,7 +182,7 @@ body.dark-mode {
 }
 
 .client-reviews {
-  background-image: url('images/2.jpg');
+  background-image: url('images/2.webp');
   background-size: cover;
   background-position: center;
   padding: 50px 0;
@@ -228,7 +228,6 @@ body.dark-mode {
   padding-right: 10%;
   padding-top: 4%;
   text-align: center;
-  background-image: url('images/15.jpg');
 }
 
 .features h2 {
@@ -247,6 +246,9 @@ body.dark-mode {
   width: 30%;
   margin-bottom: 30px;
   position: relative;
+}
+.feature-card:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .feature-card img {
@@ -282,6 +284,33 @@ body.dark-mode {
   text-align: center;
 }
 
+/* Glacier Effect */
+.glacier-effect {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.glacier-effect:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: url('images/18.webp') no-repeat center center;
+  background-size: cover;
+  opacity: 0.2;
+  transform: rotate(45deg);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.glacier-effect .plan-card {
+  position: relative;
+  z-index: 2;
+}
+
 .plans h2 {
   font-size: 2rem;
   margin-bottom: 30px;
@@ -306,7 +335,8 @@ body.dark-mode {
   transition: transform 0.3s;}
 
 .plan-card:hover {
-  transform: translateY(-10px);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .plan-card h3 {
@@ -377,7 +407,8 @@ body.dark-mode {
 }
 
 .about-section {
-  background-image: url('images/12.jpg');
+  background-image: url('images/12.webp');
+  background-blend-mode:lighten;
   background-size: cover;
   background-position: center;
   padding: 50px 15%;
@@ -417,7 +448,7 @@ body.dark-mode {
 }
 
 .contact-section {
-  background-image: url('images/13.jpg');
+  background-image: url('images/13.webp');
   background-size: cover;
   background-position: center;
   padding: 50px 10%;
@@ -475,7 +506,7 @@ body.dark-mode {
       margin-bottom: 10px;
   }
   .about-section {
-      background-image: url('images/12.jpg');
+      background-image: url('images/12.webp');
       background-size: cover;
       background-position: center;
       padding: 50px 15%;
