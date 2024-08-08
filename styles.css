@@ -27,20 +27,21 @@ body {
 
 .header {
   background-image: url('images/21.webp');
-  background-size:cover;
+  background-size:40vh;
   background-position: center;
   padding-top: 75vh;
   color: white;
   text-align: center;
   position: relative;
   animation: fadeIn 2s ease-in-out;
-  margin-bottom: 0; /* Increase white space below header */
-  box-shadow: 8px 8px 16px #b5b5b5, -8px -8px 16px #ffffff;
+  border-radius: 5vh;
+  margin: 10vw; /* Increase white space below header */
+  box-shadow: 8px 8px 16px #0000006a, -8px -8px 16px #0000006a;
 
 }
 .feature-card, .plan-card, .review-box {
   background: #e0e0e0;
-  box-shadow: 8px 8px 16px, -8px -8px 16px;
+  box-shadow: 8px 8px 16px #0000006a, -8px -8px 16px #0000006a;
   border-radius: 15px;
 }
 
@@ -63,13 +64,14 @@ body {
   margin-bottom: 20vh;
   width: 20%;
 }
+
 .navbar-toggler {
   border: none;
   background-color: transparent;
 }
 
 .navbar-brand {
-  color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
   width: 20%;
   font-weight: 700;
   text-decoration: none !important;
