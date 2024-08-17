@@ -3,7 +3,7 @@
   --secondary-color: #0056b3;
   --background-color: #ffffff6a;
   --text-color: #ffffff;
-  --dark-background-color: #000000;
+  --dark-background-color: #00000079;
   --dark-text-color: #000000;
   --light-card-background: #ffffff;
   --dark-card-background: #1c1c1c;
@@ -16,18 +16,18 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: var(--background-color);
+
   color: var(--text-color);
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
   background-size:cover;
-  background: linear-gradient(135deg, #e5efff76, #f9dfff79);
+  background: linear-gradient(135deg, #d7ff366b, #53ff7bba);
 }
 
 .header {
   background-image: url('images/21.webp');
-  background-size:40vh;
+  background-size:contain;
   background-position: center;
   padding-top: 75vh;
   color: white;
@@ -36,7 +36,7 @@ body {
   animation: fadeIn 2s ease-in-out;
   border-radius: 5vh;
   margin: 10vw; /* Increase white space below header */
-  box-shadow: 8px 8px 16px #0000006a, -8px -8px 16px #0000006a;
+  box-shadow: 2px 4px 12px #0000006a, -2px -4px 12px #0000006a;
   margin-bottom: 15vh;
 
 }
@@ -92,7 +92,7 @@ body {
   padding: 8px 16px;
   border-radius: 5px;
   transition: background-color 0.3s;
-  z-index: 10; /* Ensure it stays on top */
+  z-index: 1000; /* Ensure it stays on top */
 }
 
 #dark-mode-toggle:hover {
@@ -115,6 +115,10 @@ body.dark-mode {
 .dark-mode .plan-card ul,
 .dark-mode .plan-card .price {
   color: #000000;
+}
+
+body.dark-mode .plan-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .dark-mode .footer {
@@ -199,10 +203,9 @@ body.dark-mode {
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.42);
 }
 
-.feature-card:hover{
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.501);
-  width: 26%;
-  padding-bottom: 10vh;
+.feature-card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .feature-content {
@@ -252,11 +255,17 @@ body.dark-mode {
   transform: rotate(45deg);
   z-index: -1;
   pointer-events: none;
+  animation: glacierMovement 20s infinite linear;
 }
 
 .glacier-effect .plan-card {
   position: relative;
   z-index: 2;
+}
+
+@keyframes glacierMovement {
+  0% { transform: rotate(45deg) translate(0, 0); }
+  100% { transform: rotate(45deg) translate(10%, 10%); }
 }
 
 .plans h2 {
@@ -273,7 +282,7 @@ body.dark-mode {
 }
 
 .plan-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 20px;
