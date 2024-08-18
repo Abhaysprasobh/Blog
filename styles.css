@@ -16,7 +16,6 @@
 
 body {
   font-family: 'Arial', sans-serif;
-
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -84,6 +83,34 @@ body {
   font-weight: 900;
 }
 
+.Navimg{
+  text-align: center;
+}
+
+.Navimg h1{
+font-size: 2rem;
+font-weight: 900;
+text-shadow: 2px 2px 4px #0000003a;
+}
+
+.Navimg img{
+  width: 10vw;
+  height: 70vh;
+  border: 1vw solid #ffffff90;
+  transition-duration: 500ms;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.429);
+  border-radius: 50%;
+  opacity: 0.9;
+  flex: auto;
+}
+.Navimg img:hover{
+  flex-direction: row;
+  border-radius: 45px;
+  width:30vw;
+  opacity: 1;
+  transition-delay: 50ms;
+}
+
 #dark-mode-toggle {
   position: fixed;
   top: 20px;
@@ -127,7 +154,7 @@ body.dark-mode .plan-card {
 }
 
 .client-reviews {
-  background-image: url('images/2.webp');
+  background-image: url('images/22.webp');
   background-size: cover;
   background-position: center;
   padding: 50px 0;
@@ -137,6 +164,7 @@ body.dark-mode .plan-card {
   border-radius: 20px ;
   margin-bottom: 50px; /* Increase white space below reviews */
   box-shadow: 1px 5px 10px rgb(0, 0, 0);
+  opacity: 1;
 }
 
 .client-reviews h2 {
@@ -371,8 +399,7 @@ body.dark-mode .plan-card {
 }
 
 .about-section {
-  background-image: url('images/12.webp');
-  background-blend-mode:lighten;
+  background-image: url('images/4.webp');
   background-size: cover;
   background-position: center;
   padding: 50px 15%;
@@ -382,16 +409,6 @@ body.dark-mode .plan-card {
   margin: 100px 10%;
   border-radius: 20px ;
   box-shadow: 1px 5px 10px rgb(0, 0, 0);
-}
-
-.profile-box {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .profile-img {
@@ -424,15 +441,6 @@ body.dark-mode .plan-card {
   box-shadow: 1px 5px 10px rgb(0, 0, 0);
 }
 
-.contact-box {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 
 .contact-content p {
   font-size: 1rem;
