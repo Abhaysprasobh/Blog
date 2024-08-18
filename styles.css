@@ -33,11 +33,16 @@ body {
   text-align: center;
   position: relative;
   animation: fadeIn 2s ease-in-out;
-  border-radius: 5vh;
+  border-radius: 0% 50%;
   margin: 10vw; /* Increase white space below header */
   box-shadow: 2px 4px 12px #0000006a, -2px -4px 12px #0000006a;
   margin-bottom: 15vh;
+  border: 1vw solid #ffffff90;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.429);
 
+}
+.header:hover{
+  background-image: url("images/1.webp");
 }
 .plan-card, .review-box {
   background: #e0e0e0;
@@ -96,8 +101,8 @@ text-shadow: 2px 2px 4px #0000003a;
 .Navimg img{
   width: 10vw;
   height: 70vh;
-  border: 1vw solid #ffffff90;
   transition-duration: 500ms;
+  border: 1vw solid #ffffff90;
   box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.429);
   border-radius: 50%;
   opacity: 0.9;
@@ -165,6 +170,8 @@ body.dark-mode .plan-card {
   margin-bottom: 50px; /* Increase white space below reviews */
   box-shadow: 1px 5px 10px rgb(0, 0, 0);
   opacity: 1;
+  border: 1vw solid #ffffff90;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.429);
 }
 
 .client-reviews h2 {
@@ -186,6 +193,12 @@ body.dark-mode .plan-card {
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  border: 1vw solid #ffffff90;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.429);
+}
+
+.review-box:hover{
+  background-image: url(images/22.webp);
 }
 
 .review-content {
@@ -222,17 +235,21 @@ body.dark-mode .plan-card {
   height: 20%;
   margin-bottom: 25vh;
   position: relative;
-  border-radius: 10px;
+  border-radius: 60px;
+  border: 1vw solid #ffffff90;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.429);
+  transition-duration: 500ms;
 }
 
 .feature-card img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 45px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.42);
 }
 
-.feature-card img:hover {
-  transform: scale(1.05);
+.feature-card:hover {
+  transform:scale(1.05);
+  transition-delay: 50ms;
   transition: transform 0.3s ease;
 }
 
@@ -244,8 +261,8 @@ body.dark-mode .plan-card {
   padding: 9px;
   background-color: rgba(0, 0, 0, 0.517);
   color:var(--text-color);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.144);
 }
 
@@ -316,10 +333,13 @@ body.dark-mode .plan-card {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 22%;
-  height: 18%;
+  height: 22%;
   margin-bottom: 30px;
   position: relative;
   transition: transform 0.3s;
+  border: 1vw solid #ffffff90;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.429);
+  background-image: url(images/19.webp);
 }
 
 .plan-card:hover {
@@ -409,6 +429,8 @@ body.dark-mode .plan-card {
   margin: 100px 10%;
   border-radius: 20px ;
   box-shadow: 1px 5px 10px rgb(0, 0, 0);
+  border: 1vw solid #ffffff90;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.429);
 }
 
 .profile-img {
@@ -416,6 +438,8 @@ body.dark-mode .plan-card {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
+  border: 1vw solid #ffffff90;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.429);
 }
 
 .profile-content h3 {
@@ -439,6 +463,8 @@ body.dark-mode .plan-card {
   margin: 50px 10%;
   border-radius: 20px ;
   box-shadow: 1px 5px 10px rgb(0, 0, 0);
+  border: 1vw solid #ffffff90;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.429);
 }
 
 
